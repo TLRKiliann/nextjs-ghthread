@@ -12,6 +12,8 @@ $ pnpm dlx shadcn-ui@latest add
 
 $ pnpm install next-themes lucide-react
 
+$ pnpm install prisma --save-dev
+
 ref:
 - https://ui.shadcn.com/docs/installation/next
 - https://lucide.dev/guide/installation

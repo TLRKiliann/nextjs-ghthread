@@ -1,11 +1,18 @@
-'use client'
+'use client';
 
-import React from 'react'
+// time video 19:42
+
+import {ThemeProvider as NextThemesProvider} from 'next-themes';
 import { ThemeProviderProps } from "next-themes/dist/types";
-import {ThemeProvider as NextThemeProvider} from 'next-themes';
 
-export const ThemeProvider: ({children, ...props}: ThemeProviderProps = ({children, ...props}: ThemeProviderProps) => {
-  return (
-    <NextThemeProvider {...props}>{children}</NextThemeProvider>
-  )
+export function ThemeProvider({children, ...props}: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }
+/*
+import type { ThemeProviderProps } from "next-themes/dist/types";
+import {ThemeProvider as NextThemesProvider} from 'next-themes';
+
+export const ThemeProvider = ({children, ...props}: ThemeProviderProps) => {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+}
+*/

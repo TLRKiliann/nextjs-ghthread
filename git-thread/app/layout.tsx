@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='h-full dark'>
-      <body className='bg-background h-full' >
+    <html lang="en" className='w-full dark'>
+      <body className='bg-background w-full' >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <div className='flex flex-col h-full'>
             <Header />
